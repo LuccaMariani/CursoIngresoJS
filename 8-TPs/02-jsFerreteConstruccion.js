@@ -24,12 +24,10 @@ function Rectangulo ()
 
 	ancho=txtIdAncho.value;
 		ancho=parseInt(ancho);
-
 	largo=txtIdLargo.value;
 		largo=parseInt(largo);
 
 	perimetro=(2*ancho)+(2*largo);
-
 	perimetroTotal=perimetro*3;//3 hiladas de alambre
 
 	alert ("La cantidad de alambre necesario para alambrar el perimetro rectangular serían: "+perimetroTotal);
@@ -42,10 +40,9 @@ function Circulo ()
 	var perimetroTotal;
 
 	radio=txtIdRadio.value;
-		radio=parseInt(radio);
+		radio=parseInt(radio);//parseFloat: numero con coma, no entero
 
 	perimetro=2*Math. PI*radio;
-
 	perimetroTotal=perimetro*3;//3 hiladas de alambre
 
 	alert ("La cantidad de alambre necesario para alambrar el perimetro circular serían: "+perimetroTotal);
@@ -59,20 +56,19 @@ function Materiales ()
 	var cal;
 	var cemento;
 	var area;
-	
 
 	ancho=txtIdAncho.value;
-		ancho=parseInt(ancho);
-
+		ancho=parseFloat(ancho);
 	largo=txtIdLargo.value;
-		largo=parseInt(largo);
+		largo=parseFloat(largo);
 
 	area=ancho*largo;
-	//alert("Area: "+area);
-
+	//alert("Area: "+area)
 	cal=area*2;
 	cemento=area*3;
-	
-	alert ("La cantidad de bolsas de cal necesitadas van a ser "+cal+" y de cemento "+cemento+".");
+	cal=Math.ceil(cal);		//returns the value of x rounded up to its nearest integer
+	cemento=Math.ceil(cemento);
 
+	alert ("Cantidad de bolsas de cal: "+cal+".\nCantidad de bolsas de cal cemento: "+cemento+".");
+// El \n hace un salto de linea tipo Enter, se escribe  Alt
 }

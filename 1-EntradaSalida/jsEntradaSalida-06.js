@@ -10,18 +10,14 @@ function sumar()
 	var suma;
 //parseInt transforma un cadena/string en numeros entero, si tiene letras las saltea completamente;
 	NumeroUno=txtIdNumeroUno.value;
-	NumeroUno=parseInt(NumeroUno);
+		NumeroUno=parseInt(NumeroUno);
 
 	NumeroDos=txtIdNumeroDos.value;
-	NumeroDos=parseInt(NumeroDos);
+		NumeroDos=parseInt(NumeroDos);
 
 	suma= NumeroUno+NumeroDos;
 
 	alert (suma);
 //Nan  = Not a number
-
-	
-
-
 }
 

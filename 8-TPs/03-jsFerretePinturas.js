@@ -17,17 +17,13 @@ function FahrenheitCentigrados ()
 
 function CentigradosFahrenheit () 
 {
-	
 	var tempF;
 	var tempC;
 
 	tempC=txtIdTemperatura.value;
 		tempC=parseInt(tempC);
 
-
 	tempF=(tempC*(9/5))+32;
 
 	alert(tempC+" centígrados son "+tempF+" Fahrenheit")
-
-
 }

@@ -1,4 +1,4 @@
-//
+//	Mariani, Juan Luca
 //  txtIdEdad
 //
 function mostrar()
@@ -11,10 +11,16 @@ function mostrar()
 	if(edad>17){
 		alert("eres mayor de edad");
 	}
-	else if(edad<13){
-		alert("eres un niño")
+	else 
+	{
+		if(edad<13)
+		{
+		alert("eres un niño");
+		}
+		else
+		{
+			alert("eres adolescente");
+		}
 	}
-	else{
-		alert("eres adolescente")
-	}
-}//FIN DE LA FUNCIÓN
+	
+}

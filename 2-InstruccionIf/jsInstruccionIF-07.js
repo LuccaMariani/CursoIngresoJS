@@ -4,18 +4,35 @@
 function mostrar()
 {
 	var edad;
-	var estado
+	var estado;
 
-	edad=txtIdEdad.value
-		edad=parseInt(edad)
-//
-// no funcionaaaa D:
-//
-	estado=document.getElementById(estadoCivil)
-	alert (estado)
+	edad=txtIdEdad.value;
+		edad=parseInt(edad);
 
-	if(edad<18&&estado=="Soltero"){
+	estado=document.getElementById("estadoCivil").value;
+
+	//alert(edad<18);
+	//alert(estado=="Soltero");
+	//Testeos porque daba mal antes :(
+
+	/* max 3
+
+	if((edad<18)&&(estado=="Soltero"))
+	{
 	alert("Es muy pequeño para NO ser soltero.")
 	}
 
-}//FIN DE LA FUNCIÓN
+	*/
+
+	if(edad<18)
+	{
+		if(estado=="Soltero")
+		{
+		alert("Es muy pequeño para NO ser soltero."	
+		}
+		else{
+			
+		}
+	}
+
+}

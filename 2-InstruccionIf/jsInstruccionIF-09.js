@@ -7,9 +7,9 @@
 
 function mostrar()
 {
-	var numeroR
+	var numeroR;
 
 	numeroR=Math.floor((Math.random()*(11-1))+1);
 
-	alert ("Numero random del 1 al 10 inclusive"+numeroR)
+	alert ("Numero random del 1 al 10 inclusive: "+numeroR);
 }//FIN DE LA FUNCIÓN

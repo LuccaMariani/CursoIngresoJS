@@ -16,8 +16,11 @@ function mostrar()
 	//alert(edad<18);
 	//alert(estadoC=="Soltero");
 
-	if((edad>17)&&(estadoC=="Soltero"))
+	if((edad>17))
 	{
-		alert("Es soltero y no es menor.")
+		if(estadoC=="Soltero")
+		{
+			alert("Es soltero y no es menor.")
+		}	
 	}
 }

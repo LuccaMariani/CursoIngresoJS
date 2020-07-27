@@ -1,10 +1,39 @@
+//
+//	Mariani, Luca
+//
+//
 function mostrar()
 {
 	//tomo el mes
-	var mesDelAño =txtIdMes.value;
-	alert(mesDelAño);
+	var mes;
 
+	mes=txtIdMes.value;
 
-
-
-}//FIN DE LA FUNCIÓN
+	switch(mes)
+	{
+		case "Julio":
+		case "Agosto":
+			alert("Abrigate que hace frio.");
+			break;
+		case "Septiembre":
+		case "Octubre":
+		case "Noviembre":
+		case "Diciembre":
+			alert("Ya pasamos el frio, ahora calor!!!.");
+			break;
+		default://el resto de casos, caen acá
+			alert("Falta para el invierno.");
+			break;
+	}
+}
+/*
+		case "Diciembre":
+		case "Enero":
+		case "Febrero":
+		case "Marzo":
+		case "Abril":
+		case "Mayo":
+		case "Junio":
+			
+			break;//con el break salis del switch
+*/

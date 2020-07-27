@@ -1,10 +1,21 @@
+//
+//	Mariani, Luca
+// ejercico 3
+//
 function mostrar()
 {
 	//tomo el mes
-	var mesDelAño =txtIdMes.value;
-	alert(mesDelAño);
-	
-	
+	var mes;
 
+	mes=txtIdMes.value;
 
-}//FIN DE LA FUNCIÓN
+	switch(mes)
+	{
+		case "Febrero":
+			alert(" Este mes no tiene más de 29 días.");
+			break;
+		default://el resto de casos, caen acá
+			alert("Este mes tiene 30 o más días");
+			break;
+	}
+}
